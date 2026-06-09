@@ -271,7 +271,7 @@ export default function DocumentClearingPage() {
                 className="relative aspect-[4/3] bg-cover bg-center rounded-2xl overflow-hidden shadow-2xl border border-white/5"
                 style={{
                   backgroundImage:
-                    "url(https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=2070&auto=format&fit=crop)",
+                    "url(https://plus.unsplash.com/premium_photo-1661772661721-b16346fe5b0f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
                 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-tr from-background/40 to-transparent" />

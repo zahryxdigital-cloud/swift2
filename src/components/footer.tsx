@@ -82,15 +82,20 @@ export default function Footer() {
                 </span>
               </li>
               <li>
-                <a href="tel:+971551697568" className="flex gap-3 text-sm text-muted hover:text-primary transition-colors">
+                <a href="tel:+971568126777" className="flex gap-3 text-sm text-muted hover:text-primary transition-colors">
                   <Phone className="w-5 h-5 text-primary shrink-0" />
-                  +971 55 169 7568
+                  +971 56 812 6777
+                </a>
+                <a href="tel:+97145585725" className="flex gap-3 text-sm text-muted hover:text-primary transition-colors">
+                  <Phone className="w-5 h-5 text-primary shrink-0" />
+                  +971 4 558 5725
+
                 </a>
               </li>
               <li>
-                <a href="mailto:info@swiftzonegroup.com" className="flex gap-3 text-sm text-muted hover:text-primary transition-colors">
+                <a href="mailto:Infoalareeqtech@gmail.com" className="flex gap-3 text-sm text-muted hover:text-primary transition-colors">
                   <Mail className="w-5 h-5 text-primary shrink-0" />
-                  info@swiftzonegroup.com
+                  Infoalareeqtech@gmail.com
                 </a>
               </li>
             </ul>

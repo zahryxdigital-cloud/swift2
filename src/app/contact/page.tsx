@@ -37,31 +37,30 @@ export default function ContactPage() {
               <div className="glass rounded-2xl p-6 border border-white/5 hover:border-primary/20 transition-all">
                 <Phone className="w-6 h-6 text-primary mb-3" />
                 <h3 className="font-semibold mb-1">Call Us</h3>
-                <a href="tel:+971551697568" className="text-sm text-muted hover:text-primary transition-colors">
-                  +971 55 169 7568
+                <a href="tel:+971568126777" className="text-sm text-muted hover:text-primary transition-colors">
+                  +971 56 812 6777
+
+                </a> <br />
+                <a href="tel:+97145585725" className="text-sm text-muted hover:text-primary transition-colors">
+                  +971 4 558 5725
+
                 </a>
               </div>
               <div className="glass rounded-2xl p-6 border border-white/5 hover:border-primary/20 transition-all">
                 <Mail className="w-6 h-6 text-primary mb-3" />
                 <h3 className="font-semibold mb-1">Email Us</h3>
                 <a
-                  href="mailto:info@swiftzonegroup.com"
+                  href="mailto:Infoalareeqtech@gmail.com"
                   className="text-sm text-muted hover:text-primary transition-colors"
                 >
-                  info@swiftzonegroup.com
+                  Infoalareeqtech@gmail.com
                 </a>
               </div>
               <div className="glass rounded-2xl p-6 border border-white/5 hover:border-primary/20 transition-all">
                 <MapPin className="w-6 h-6 text-primary mb-3" />
                 <h3 className="font-semibold mb-1">Visit Us</h3>
                 <p className="text-sm text-muted">
-                  Office B-24
-                  <br />
-                  Hor Al Anz Building - 307
-                  <br />
-                  Hor Al Anz, Dubai
-                  <br />
-                  United Arab Emirates
+                  Office no 202, Coastal Building, Al Qusais 2, Dubai, United Arab Emirates
                 </p>
               </div>
             </motion.div>

@@ -97,8 +97,8 @@ export default function AboutPage() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6"
           >
             Delivering Reliable{" "}
-            <span className="text-gradient-gold">Facility &amp; Manpower</span>
             <br />
+            <span className="text-gradient-gold">Facility &amp; Manpower</span><br />
             Services Across the UAE
           </motion.h1>
           <motion.p
