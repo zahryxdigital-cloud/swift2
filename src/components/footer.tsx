@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 const footerLinks = {
   quick: [
@@ -22,17 +23,18 @@ export default function Footer() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-6">
-              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-amber-600 flex items-center justify-center font-bold text-background text-sm">
-                SZ
-              </div>
-              <div>
-                <span className="text-lg font-bold">Swift Zone</span>
-                <span className="block text-[9px] text-muted tracking-widest uppercase">Facility Management</span>
-              </div>
+            <Link href="/" className="flex items-center gap-2 mb-4 -ml-8">
+              <Image
+                src="/logo-ats.png"
+                alt="Al Areeq Technical Services"
+                width={280}
+                height={90}
+                priority
+                className="h-20  object-cover"
+              />
             </Link>
             <p className="text-sm text-muted leading-relaxed">
-              Swift Zone Facilities Management Services is a trusted manpower supply company in the UAE, serving construction, marine, and maintenance industries.
+              Al Areeq Facilities Management Services is a trusted manpower supply company in the UAE, serving construction, marine, and maintenance industries.
             </p>
           </div>
 
@@ -108,7 +110,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted">
-            &copy; {new Date().getFullYear()} Swift Zone Facility Management Services. All rights reserved.
+            &copy; {new Date().getFullYear()} Al Areeq Facility Management Services. All rights reserved.
           </p>
           <p className="text-xs text-muted">
             Powered by{" "}

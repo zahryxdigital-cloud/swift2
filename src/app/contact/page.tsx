@@ -22,7 +22,7 @@ export default function ContactPage() {
               <span className="text-gradient-gold">Help!</span>
             </h1>
             <p className="mt-6 text-muted text-sm leading-relaxed">
-              Looking for reliable manpower solutions? Contact Swift Zone for professional workforce support across
+              Looking for reliable manpower solutions? Contact Al Areeq for professional workforce support across
               construction, marine, and maintenance sectors.
             </p>
           </motion.div>

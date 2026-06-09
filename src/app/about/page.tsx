@@ -107,7 +107,7 @@ export default function AboutPage() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-muted text-base leading-relaxed max-w-2xl mx-auto"
           >
-            Swift Zone Facility Management Services is a trusted provider of professional facility management,
+            Al Areeq Facility Management Services is a trusted provider of professional facility management,
             manpower supply, maintenance, and technical support services across the UAE.
           </motion.p>
         </div>
@@ -180,12 +180,12 @@ export default function AboutPage() {
             >
               <span className="text-primary text-xs font-semibold uppercase tracking-widest">Who We Are</span>
               <h2 className="mt-4 text-3xl sm:text-4xl font-bold leading-snug">
-                About Swift Zone{" "}
+                About Al Areeq{" "}
                 <span className="text-gradient-gold">Facilities Management</span>
               </h2>
               <div className="mt-6 space-y-4 text-muted text-sm leading-relaxed">
                 <p>
-                  Swift Zone Facilities Management Services is a trusted manpower supply company in the UAE,
+                  Al Areeq Facilities Management Services is a trusted manpower supply company in the UAE,
                   serving construction companies, marine repair businesses, workshops, and maintenance firms
                   with reliable workforce solutions.
                 </p>
@@ -243,7 +243,7 @@ export default function AboutPage() {
                 <div className="relative w-full max-w-sm lg:max-w-md rounded-2xl overflow-hidden border border-primary/20 shadow-2xl">
                   <Image
                     src="/founder.jpg"
-                    alt="Mohammed Jahadul Alam - Founder & Managing Director, Swift Zone"
+                    alt="Mohammed Jahadul Alam - Founder & Managing Director, Al Areeq"
                     width={500}
                     height={650}
                     className="object-cover w-full h-auto"
@@ -272,9 +272,9 @@ export default function AboutPage() {
               <div className="mt-6 relative">
                 <Quote className="absolute -top-2 -left-1 w-8 h-8 text-primary/20" />
                 <div className="pl-6 space-y-4 text-muted text-sm leading-relaxed">
-                  <p>Welcome to Swift Zone Facility Management Services.</p>
+                  <p>Welcome to Al Areeq Facility Management Services.</p>
                   <p>
-                    At Swift Zone, we are committed to delivering reliable, efficient, and high-quality
+                    At Al Areeq, we are committed to delivering reliable, efficient, and high-quality
                     facility management and manpower solutions across the UAE. Our goal is to support
                     businesses with professional services that ensure operational excellence, safety,
                     and customer satisfaction.
@@ -296,7 +296,7 @@ export default function AboutPage() {
                 <div className="h-12 w-1 rounded-full bg-gradient-to-b from-primary to-amber-400" />
                 <div>
                   <p className="font-bold text-foreground">Mohammed Jahadul Alam</p>
-                  <p className="text-xs text-muted mt-0.5">Founder &amp; Managing Director, Swift Zone Facility Management Services</p>
+                  <p className="text-xs text-muted mt-0.5">Founder &amp; Managing Director, Al Areeq Facility Management Services</p>
                 </div>
               </div>
 
@@ -520,10 +520,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
             >
-              <span className="text-primary text-xs font-semibold uppercase tracking-widest">Why Swift Zone</span>
+              <span className="text-primary text-xs font-semibold uppercase tracking-widest">Why Al Areeq</span>
               <h2 className="mt-4 text-3xl sm:text-4xl font-bold leading-snug">
                 Why Businesses Choose{" "}
-                <span className="text-gradient-gold">Swift Zone</span>
+                <span className="text-gradient-gold">Al Areeq</span>
               </h2>
               <p className="mt-6 text-muted text-sm leading-relaxed">
                 We bring a combination of industry experience, licensed operations, and a client-first
@@ -581,7 +581,7 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
               Ready to Partner with{" "}
-              <span className="text-gradient-gold">Swift Zone?</span>
+              <span className="text-gradient-gold">Al Areeq?</span>
             </h2>
             <p className="text-muted text-sm leading-relaxed mb-10 max-w-xl mx-auto">
               Let us provide the reliable manpower and facility management solutions your business needs

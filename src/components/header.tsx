@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+
 import { usePathname } from "next/navigation";
 
 const navLinks = [
@@ -39,16 +41,25 @@ export default function Header() {
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-amber-600 flex items-center justify-center font-bold text-lg text-background">
+            {/* <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-amber-600 flex items-center justify-center font-bold text-lg text-background">
               SZ
             </div>
             <div className="hidden sm:block">
-              <span className="text-xl font-bold tracking-tight">Swift Zone</span>
+              <span className="text-xl font-bold tracking-tight">Al Areeq</span>
               <span className="block text-[10px] text-muted tracking-widest uppercase">Facility Management</span>
-            </div>
+            </div> */}
+            <Image
+              src="/logo-ats.png"
+              alt="Al Areeq Technical Services"
+              width={280}
+              height={90}
+              priority
+              className="h-20  object-cover"
+            />
           </Link>
+
 
           <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) =>
@@ -107,11 +118,11 @@ export default function Header() {
 
           <div className="flex items-center gap-4">
             <a
-              href="tel:+971551697568"
+              href="tel:+971568126777"
               className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary hover:bg-primary/20 transition-all text-sm font-medium"
             >
               <Phone className="w-4 h-4" />
-              +971 55 169 7568
+              +971 56 812 6777
             </a>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
@@ -170,11 +181,11 @@ export default function Header() {
                 )
               )}
               <a
-                href="tel:+971551697568"
+                href="tel:+971568126777"
                 className="flex items-center gap-2 px-4 py-3 mt-4 rounded-lg bg-primary/10 border border-primary/20 text-primary font-medium"
               >
                 <Phone className="w-4 h-4" />
-                +971 55 169 7568
+                +971 56 812 6777
               </a>
             </div>
           </motion.div>

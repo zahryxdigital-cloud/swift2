@@ -22,7 +22,7 @@ export default function ConstructionManpowerSupply() {
               <span className="text-gradient-gold">Supply</span>
             </h1>
             <p className="text-muted text-sm leading-relaxed mb-8">
-              Swift Zone provides skilled, semi-skilled, and general workers for construction projects of all sizes. Our
+              Al Areeq provides skilled, semi-skilled, and general workers for construction projects of all sizes. Our
               workforce is trained, experienced, and ready to deploy across the UAE.
             </p>
             <Link

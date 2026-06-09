@@ -13,7 +13,7 @@ const slides = [
   },
   {
     title: "Your Trusted Workforce & Facility Partner",
-    description: "Swift Zone delivers dependable staffing, technical support, and facility management solutions with quality, safety, and efficiency.",
+    description: "Al Areeq delivers dependable staffing, technical support, and facility management solutions with quality, safety, and efficiency.",
     image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop",
   },
   {

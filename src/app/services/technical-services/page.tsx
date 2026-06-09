@@ -114,7 +114,7 @@ export default function TechnicalServicesPage() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-muted text-base leading-relaxed"
             >
-              Swift Zone delivers premium engineering, fit-out maintenance, and MEP (Mechanical, Electrical, Plumbing) support tailored for commercial offices, residential spaces, and industrial facilities in the UAE.
+              Al Areeq delivers premium engineering, fit-out maintenance, and MEP (Mechanical, Electrical, Plumbing) support tailored for commercial offices, residential spaces, and industrial facilities in the UAE.
             </motion.p>
           </div>
 

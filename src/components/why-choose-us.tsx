@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
           <span className="text-primary text-xs font-semibold uppercase tracking-widest">Why Choose Us</span>
           <h2 className="mt-4 text-3xl sm:text-4xl font-bold">
             Why Choose{" "}
-            <span className="text-gradient-gold">Swift Zone</span>
+            <span className="text-gradient-gold">Al Areeq</span>
           </h2>
         </motion.div>
 

@@ -115,7 +115,7 @@ export default function DocumentClearingPage() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-muted text-base leading-relaxed"
             >
-              Swift Zone offers premium, fast-tracked document clearing and governmental PRO services, allowing you to focus on your core business operations while we navigate UAE regulations.
+              Al Areeq offers premium, fast-tracked document clearing and governmental PRO services, allowing you to focus on your core business operations while we navigate UAE regulations.
             </motion.p>
           </div>
 

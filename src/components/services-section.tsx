@@ -49,7 +49,7 @@ export default function ServicesSection() {
             <span className="text-gradient-gold">Workforce Solutions</span>
           </h2>
           <p className="mt-4 text-muted text-sm leading-relaxed">
-            Swift Zone provides reliable manpower solutions for construction, marine repair, workshops, and maintenance businesses across the UAE.
+            Al Areeq provides reliable manpower solutions for construction, marine repair, workshops, and maintenance businesses across the UAE.
           </p>
         </motion.div>
 

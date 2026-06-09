@@ -115,7 +115,7 @@ export default function BuildingCleaningPage() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-muted text-base leading-relaxed"
             >
-              Swift Zone is a leading provider of professional cleaning services in the UAE, delivering comprehensive commercial, residential, and specialized hygiene solutions that ensure pristine, healthy spaces.
+              Al Areeq is a leading provider of professional cleaning services in the UAE, delivering comprehensive commercial, residential, and specialized hygiene solutions that ensure pristine, healthy spaces.
             </motion.p>
           </div>
 

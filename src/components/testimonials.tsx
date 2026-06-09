@@ -8,21 +8,21 @@ const testimonials = [
     name: "Mohammed Ibrahim",
     role: "Project Manager",
     quote:
-      "Swift Zone has been a reliable partner for our operations. Their manpower supply team is professional, punctual, and highly skilled. From maintenance support to marine field staffing, their service quality has always exceeded our expectations.",
+      "Al Areeq has been a reliable partner for our operations. Their manpower supply team is professional, punctual, and highly skilled. From maintenance support to marine field staffing, their service quality has always exceeded our expectations.",
     rating: 5,
   },
   {
     name: "Ahmed Farook",
     role: "Managing Partner",
     quote:
-      "We are extremely satisfied with the facility management and technical manpower services provided by Swift Zone. Their team responds quickly, maintains high standards, and ensures smooth day-to-day operations for our company.",
+      "We are extremely satisfied with the facility management and technical manpower services provided by Al Areeq. Their team responds quickly, maintains high standards, and ensures smooth day-to-day operations for our company.",
     rating: 5,
   },
   {
     name: "Saeed Al Mazroui",
     role: "Operations Director",
     quote:
-      "Swift Zone's workforce solutions have been instrumental in helping us meet our project deadlines. Their ability to supply skilled workers on short notice is truly impressive. Highly recommended for construction manpower needs.",
+      "Al Areeq's workforce solutions have been instrumental in helping us meet our project deadlines. Their ability to supply skilled workers on short notice is truly impressive. Highly recommended for construction manpower needs.",
     rating: 5,
   },
 ];

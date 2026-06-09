@@ -45,14 +45,14 @@ export default function AboutSection() {
             viewport={{ once: true }}
           >
             <span className="text-primary text-xs font-semibold uppercase tracking-widest">
-              Swift Zone Facilities Management
+              Al Areeq Facilities Management
             </span>
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold leading-tight">
               Your Trusted Workforce Partner<br />
               <span className="text-gradient-gold">in the UAE</span>
             </h2>
             <p className="mt-6 text-muted text-sm leading-relaxed">
-              Swift Zone Facilities Management Services specializes in providing dependable manpower solutions tailored
+              Al Areeq Facilities Management Services specializes in providing dependable manpower solutions tailored
               for the construction, marine, workshop, and maintenance sectors. We help businesses meet operational
               demands with skilled workers, efficient deployment, and reliable workforce management.
             </p>

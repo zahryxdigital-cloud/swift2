@@ -8,7 +8,7 @@ const services = [
   {
     title: "Construction Manpower Supply",
     description:
-      "Swift Zone provides skilled, semi-skilled, and general workers for construction projects of all sizes. Our workforce is trained, experienced, and ready to deploy.",
+      "Al Areeq provides skilled, semi-skilled, and general workers for construction projects of all sizes. Our workforce is trained, experienced, and ready to deploy.",
     icon: HardHat,
     image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop",
     href: "/services/construction-manpower-supply",
@@ -71,7 +71,7 @@ export default function ServicesPage() {
               <span className="text-gradient-gold">Workforce Solutions</span>
             </h1>
             <p className="mt-6 text-muted text-sm leading-relaxed">
-              Swift Zone provides comprehensive manpower solutions tailored for construction, marine, workshop, and
+              Al Areeq provides comprehensive manpower solutions tailored for construction, marine, workshop, and
               maintenance businesses across the UAE.
             </p>
           </motion.div>
