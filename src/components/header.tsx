@@ -13,9 +13,9 @@ const navLinks = [
     href: "/services",
     label: "Services",
     dropdown: [
-      { href: "/services/construction-manpower-supply", label: "Construction Manpower Supply" },
-      { href: "/services/marine-repair-and-workshop-manpower-supply", label: "Marine Repair & Workshop Manpower Supply" },
-      { href: "/services/maintenance-company-staffing-solutions", label: "Maintenance Company Staffing Solutions" },
+      { href: "/services/document-clearing", label: "Document Clearing" },
+      { href: "/services/technical-services", label: "Technical Services" },
+      { href: "/services/building-cleaning", label: "Building Cleaning" },
     ],
   },
   { href: "/contact", label: "Contact Us" },
@@ -35,9 +35,8 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-background/95 backdrop-blur-xl border-b border-white/5" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/95 backdrop-blur-xl border-b border-white/5" : "bg-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -62,11 +61,10 @@ export default function Header() {
                 >
                   <Link
                     href={link.href}
-                    className={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                      pathname.startsWith("/services")
-                        ? "text-primary"
-                        : "text-foreground/80 hover:text-primary"
-                    }`}
+                    className={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${pathname.startsWith("/services")
+                      ? "text-primary"
+                      : "text-foreground/80 hover:text-primary"
+                      }`}
                   >
                     {link.label}
                     <ChevronDown className="w-3.5 h-3.5 transition-transform group-hover:rotate-180" />
@@ -96,11 +94,10 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    pathname === link.href
-                      ? "text-primary"
-                      : "text-foreground/80 hover:text-primary"
-                  }`}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${pathname === link.href
+                    ? "text-primary"
+                    : "text-foreground/80 hover:text-primary"
+                    }`}
                 >
                   {link.label}
                 </Link>
@@ -162,11 +159,10 @@ export default function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`block px-4 py-3 rounded-lg font-medium ${
-                      pathname === link.href
-                        ? "text-primary bg-primary/5"
-                        : "text-foreground/80 hover:text-primary hover:bg-white/5"
-                    }`}
+                    className={`block px-4 py-3 rounded-lg font-medium ${pathname === link.href
+                      ? "text-primary bg-primary/5"
+                      : "text-foreground/80 hover:text-primary hover:bg-white/5"
+                      }`}
                     onClick={() => setMobileOpen(false)}
                   >
                     {link.label}

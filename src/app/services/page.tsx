@@ -84,9 +84,8 @@ export default function ServicesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15 }}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ${
-                  i % 2 === 1 ? "lg:direction-rtl" : ""
-                }`}
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ${i % 2 === 1 ? "lg:direction-rtl" : ""
+                  }`}
               >
                 <div className={i % 2 === 1 ? "lg:order-2" : ""}>
                   <div
