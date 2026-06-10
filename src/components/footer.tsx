@@ -78,7 +78,7 @@ export default function Footer() {
               <li className="flex gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-sm text-muted">
-                  Office B-24, Hor Al Anz Building - 307, Hor Al Anz, Dubai, United Arab Emirates
+                  Office no 202, Coastal Building, Al Qusais 2, Dubai, United Arab Emirates
                 </span>
               </li>
               <li>
