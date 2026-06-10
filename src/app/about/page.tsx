@@ -243,7 +243,7 @@ export default function AboutPage() {
                 <div className="relative w-full max-w-sm lg:max-w-md rounded-2xl overflow-hidden border border-primary/20 shadow-2xl">
                   <Image
                     src="/founder.jpg"
-                    alt="Mohammed Jahadul Alam - Founder & Managing Director, Al Areeq"
+                    alt="Mahfuz Ullah - Founder & Managing Director, Al Areeq"
                     width={500}
                     height={650}
                     className="object-cover w-full h-auto"
@@ -251,7 +251,7 @@ export default function AboutPage() {
                   />
                   {/* Name overlay at bottom */}
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/95 via-background/60 to-transparent px-6 py-5">
-                    <p className="font-bold text-base text-foreground">Mohammed Jahadul Alam</p>
+                    <p className="font-bold text-base text-foreground">Mahfuz Ullah</p>
                     <p className="text-xs text-primary font-medium mt-0.5">Founder &amp; Managing Director</p>
                   </div>
                 </div>
@@ -295,7 +295,7 @@ export default function AboutPage() {
               <div className="mt-8 flex items-center gap-4">
                 <div className="h-12 w-1 rounded-full bg-gradient-to-b from-primary to-amber-400" />
                 <div>
-                  <p className="font-bold text-foreground">Mohammed Jahadul Alam</p>
+                  <p className="font-bold text-foreground">Mahfuz Ullah</p>
                   <p className="text-xs text-muted mt-0.5">Founder &amp; Managing Director, Al Areeq Facility Management Services</p>
                 </div>
               </div>
