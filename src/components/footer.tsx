@@ -115,7 +115,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted">
-            &copy; {new Date().getFullYear()} Al Areeq Facility Management Services. All rights reserved.
+            &copy; {new Date().getFullYear()} Al Areeq Technical Services. All rights reserved.
           </p>
           <p className="text-xs text-muted">
             Powered by{" "}

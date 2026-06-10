@@ -45,7 +45,7 @@ export default function AboutSection() {
             viewport={{ once: true }}
           >
             <span className="text-primary text-xs font-semibold uppercase tracking-widest">
-              Al Areeq Facilities Management
+              Al Areeq Technical Services
             </span>
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold leading-tight">
               Your Trusted Workforce Partner<br />

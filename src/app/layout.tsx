@@ -9,11 +9,11 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Al Areeq | Manpower & Facility Management Services UAE",
+  title: "Al Areeq | Manpower & Technical Services UAE",
   description:
-    "Al Areeq Facility Management Services provides professional manpower supply, marine staffing, maintenance, and facility management solutions across the UAE.",
+    "Al Areeq Technical Services provides professional manpower supply, marine staffing, maintenance, and facility management solutions across the UAE.",
   openGraph: {
-    title: "Al Areeq | Manpower & Facility Management Services",
+    title: "Al Areeq | Manpower & Technical Services",
     description:
       "Reliable manpower solutions for construction, marine, and maintenance industries across the UAE.",
   },

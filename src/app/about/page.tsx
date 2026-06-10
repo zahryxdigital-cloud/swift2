@@ -107,7 +107,7 @@ export default function AboutPage() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-muted text-base leading-relaxed max-w-2xl mx-auto"
           >
-            Al Areeq Facility Management Services is a trusted provider of professional facility management,
+            Al Areeq Technical Services is a trusted provider of professional facility management,
             manpower supply, maintenance, and technical support services across the UAE.
           </motion.p>
         </div>
@@ -181,7 +181,7 @@ export default function AboutPage() {
               <span className="text-primary text-xs font-semibold uppercase tracking-widest">Who We Are</span>
               <h2 className="mt-4 text-3xl sm:text-4xl font-bold leading-snug">
                 About Al Areeq{" "}
-                <span className="text-gradient-gold">Facilities Management</span>
+                <span className="text-gradient-gold">Technical Services</span>
               </h2>
               <div className="mt-6 space-y-4 text-muted text-sm leading-relaxed">
                 <p>
