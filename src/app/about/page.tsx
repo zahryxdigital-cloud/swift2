@@ -272,10 +272,10 @@ export default function AboutPage() {
               <div className="mt-6 relative">
                 <Quote className="absolute -top-2 -left-1 w-8 h-8 text-primary/20" />
                 <div className="pl-6 space-y-4 text-muted text-sm leading-relaxed">
-                  <p>Welcome to Al Areeq Facility Management Services.</p>
+                  <p>Welcome to Al Areeq Technical Services.</p>
                   <p>
                     At Al Areeq, we are committed to delivering reliable, efficient, and high-quality
-                    facility management and manpower solutions across the UAE. Our goal is to support
+                    technical services and manpower solutions across the UAE. Our goal is to support
                     businesses with professional services that ensure operational excellence, safety,
                     and customer satisfaction.
                   </p>
@@ -296,7 +296,7 @@ export default function AboutPage() {
                 <div className="h-12 w-1 rounded-full bg-gradient-to-b from-primary to-amber-400" />
                 <div>
                   <p className="font-bold text-foreground">Mahfuz Ullah</p>
-                  <p className="text-xs text-muted mt-0.5">Founder &amp; Managing Director, Al Areeq Facility Management Services</p>
+                  <p className="text-xs text-muted mt-0.5">Founder &amp; Managing Director, Al Areeq Technical Services</p>
                 </div>
               </div>
 
