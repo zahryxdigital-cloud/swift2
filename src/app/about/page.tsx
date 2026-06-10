@@ -242,7 +242,7 @@ export default function AboutPage() {
                 <div className="absolute -inset-2 rounded-2xl bg-gradient-to-br from-primary/40 via-amber-400/20 to-transparent blur-md" />
                 <div className="relative w-full max-w-sm lg:max-w-md rounded-2xl overflow-hidden border border-primary/20 shadow-2xl">
                   <Image
-                    src="/founder.jpg"
+                    src="/ceo2.jpeg"
                     alt="Mahfuz Ullah - Founder & Managing Director, Al Areeq"
                     width={500}
                     height={650}
