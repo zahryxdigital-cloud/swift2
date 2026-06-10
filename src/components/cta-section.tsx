@@ -22,7 +22,7 @@ export default function CTASection() {
             <span className="text-gradient-gold">Workforce?</span>
           </h2>
           <p className="mt-6 text-muted max-w-2xl mx-auto text-sm leading-relaxed">
-            Get in touch with Al Areeq Facilities Management Services for reliable manpower supply and professional
+            Get in touch with Al Areeq Technical Services for reliable manpower supply and professional
             workforce solutions tailored to your construction, marine, workshop, and maintenance requirements across the
             UAE.
           </p>

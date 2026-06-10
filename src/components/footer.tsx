@@ -34,7 +34,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm text-muted leading-relaxed">
-              Al Areeq Facilities Management Services is a trusted manpower supply company in the UAE, serving construction, marine, and maintenance industries.
+              Al Areeq Technical Services is a trusted manpower supply company in the UAE, serving construction, marine, and maintenance industries.
             </p>
           </div>
 
