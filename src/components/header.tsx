@@ -15,7 +15,7 @@ const navLinks = [
     href: "/services",
     label: "Services",
     dropdown: [
-      { href: "/services/document-clearing", label: "Document Clearing" },
+      // { href: "/services/document-clearing", label: "Document Clearing" },
       { href: "/services/technical-services", label: "Technical Services" },
       { href: "/services/building-cleaning", label: "Building Cleaning" },
     ],

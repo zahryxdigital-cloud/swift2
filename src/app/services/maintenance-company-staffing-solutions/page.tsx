@@ -42,7 +42,7 @@ export default function MaintenanceStaffingPage() {
               className="aspect-[4/3] bg-cover bg-center rounded-2xl"
               style={{
                 backgroundImage:
-                  "url(https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop)",
+                  "url(/maintenance-staff.png)",
               }}
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-background/40 to-transparent rounded-2xl" />

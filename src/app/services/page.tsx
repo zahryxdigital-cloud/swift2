@@ -10,7 +10,7 @@ const services = [
     description:
       "Al Areeq provides skilled, semi-skilled, and general workers for construction projects of all sizes. Our workforce is trained, experienced, and ready to deploy.",
     icon: HardHat,
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop",
+    image: "/construction-manpower.png",
     href: "/services/construction-manpower-supply",
     features: [
       "General laborers for construction sites",
@@ -25,7 +25,7 @@ const services = [
     description:
       "Supporting the maritime industry with experienced marine technicians, workshop staff, and skilled trades for ship repair, maintenance, and fabrication work.",
     icon: Anchor,
-    image: "https://images.unsplash.com/photo-1566576912328-109e6d8c1a2d?q=80&w=2070&auto=format&fit=crop",
+    image: "/marine-repair.png",
     href: "/services/marine-repair-and-workshop-manpower-supply",
     features: [
       "Marine fitters and welders",
@@ -40,7 +40,7 @@ const services = [
     description:
       "Professional maintenance crews for facility upkeep, HVAC, electrical, plumbing, and general building maintenance. We keep your operations running smoothly.",
     icon: Wrench,
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop",
+    image: "/maintenance-staff.png",
     href: "/services/maintenance-company-staffing-solutions",
     features: [
       "HVAC technicians and maintenance engineers",

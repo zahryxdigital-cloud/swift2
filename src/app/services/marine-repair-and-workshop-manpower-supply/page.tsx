@@ -42,7 +42,7 @@ export default function MarineRepairPage() {
               className="aspect-[4/3] bg-cover bg-center rounded-2xl"
               style={{
                 backgroundImage:
-                  "url(https://images.unsplash.com/photo-1566576912328-109e6d8c1a2d?q=80&w=2070&auto=format&fit=crop)",
+                  "url(/marine-repair.png)",
               }}
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-background/40 to-transparent rounded-2xl" />

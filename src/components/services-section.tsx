@@ -11,7 +11,7 @@ const services = [
     description:
       "Skilled, semi-skilled, and general workers for construction projects. We ensure timely deployment and workforce reliability.",
     icon: HardHat,
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop",
+    image: "/construction-manpower.png",
     href: "/services/construction-manpower-supply",
   },
   {
@@ -19,7 +19,7 @@ const services = [
     description:
       "Experienced marine technicians, welders, fitters, and workshop staff for ship repair and maritime operations.",
     icon: Anchor,
-    image: "https://images.unsplash.com/photo-1566576912328-109e6d8c1a2d?q=80&w=2070&auto=format&fit=crop",
+    image: "/marine-repair.png",
     href: "/services/marine-repair-and-workshop-manpower-supply",
   },
   {
@@ -27,7 +27,7 @@ const services = [
     description:
       "Professional maintenance crews for facility upkeep, HVAC, electrical, plumbing, and general building maintenance.",
     icon: Wrench,
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop",
+    image: "/maintenance-staff.png",
     href: "/services/maintenance-company-staffing-solutions",
   },
 ];

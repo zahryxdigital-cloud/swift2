@@ -20,7 +20,7 @@ export default function AboutSection() {
                 className="aspect-[4/3] bg-cover bg-center"
                 style={{
                   backgroundImage:
-                    "url(https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop)",
+                    "url(/about-section.png)",
                 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-tr from-background/60 via-transparent to-transparent" />

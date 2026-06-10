@@ -270,7 +270,7 @@ export default function TechnicalServicesPage() {
                 className="relative aspect-[4/3] bg-cover bg-center rounded-2xl overflow-hidden shadow-2xl border border-white/5"
                 style={{
                   backgroundImage:
-                    "url(https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop)",
+                    "url(/technical-services.png)",
                 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-tr from-background/40 to-transparent" />

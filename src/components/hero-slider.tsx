@@ -9,17 +9,17 @@ const slides = [
   {
     title: "Reliable Manpower & Labour Supply Solutions",
     description: "Skilled, semi-skilled, and unskilled workforce tailored to your project needs, ensuring efficiency, compliance, and timely delivery.",
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop",
+    image: "/construction-manpower.png",
   },
   {
     title: "Your Trusted Workforce & Facility Partner",
     description: "Al Areeq delivers dependable staffing, technical support, and facility management solutions with quality, safety, and efficiency.",
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop",
+    image: "/maintenance-staff.png",
   },
   {
     title: "Skilled Marine Manpower You Can Trust",
     description: "Supporting the maritime industry with experienced technicians, workshop staff, and marine facility management solutions across the UAE.",
-    image: "https://images.unsplash.com/photo-1566576912328-109e6d8c1a2d?q=80&w=2070&auto=format&fit=crop",
+    image: "/marine-repair.png",
   },
 ];
 

@@ -77,7 +77,7 @@ export default function AboutPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url(https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop)",
+              "url(/about-section.png)",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background" />
@@ -393,8 +393,9 @@ export default function AboutPage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
+              /*
               {
                 num: "01",
                 title: "Document Clearing",
@@ -403,8 +404,9 @@ export default function AboutPage() {
                 icon: Globe,
                 href: "/services/document-clearing",
               },
+              */
               {
-                num: "02",
+                num: "01",
                 title: "Technical Services",
                 desc: "Expert technical solutions",
                 details: "Comprehensive technical support, engineering, maintenance, and expert technical manpower supply.",
@@ -412,7 +414,7 @@ export default function AboutPage() {
                 href: "/services/technical-services",
               },
               {
-                num: "03",
+                num: "02",
                 title: "Building Cleaning",
                 desc: "Professional facility management",
                 details: "Top-tier building cleaning, janitorial maintenance, and thorough facility hygiene solutions tailored for commercial sectors.",
