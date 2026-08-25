@@ -26,7 +26,7 @@ const navLinks = [
       // { href: "/services/document-clearing", label: "Document Clearing" },
       { href: "/services/technical-services", label: "Technical Services" },
       { href: "/services/building-cleaning", label: "Building Cleaning" },
-      { href: "/services/manpower-supply", label: "Manpower Supply" },
+      { href: "/services", label: "Manpower Supply" },
     ],
   },
   { href: "/contact", label: "Contact Us" },
