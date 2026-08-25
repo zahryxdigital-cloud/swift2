@@ -141,7 +141,7 @@ export default function AboutPage() {
       </section>
 
       {/* ─── Who We Are ─── */}
-      <section className="relative py-24 overflow-hidden">
+      <section id="story" className="relative py-24 overflow-hidden">
         <div className="absolute right-0 top-0 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[150px] pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -211,10 +211,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ─── Founder / CEO Section ─── */}
-      <section className="relative py-24 bg-surface overflow-hidden">
-        <div className="absolute left-0 top-0 w-[400px] h-[400px] rounded-full bg-primary/5 blur-[130px] pointer-events-none" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* ─── Founder / CEO & Leadership Hierarchy Tree Section ─── */}
+      <section id="leadership" className="relative py-24 bg-surface overflow-hidden border-y border-white/5">
+        <div className="absolute left-1/2 top-1/4 -translate-x-1/2 w-[600px] h-[400px] rounded-full bg-primary/5 blur-[150px] pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Section Header */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -222,96 +223,181 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-primary text-xs font-semibold uppercase tracking-widest">Leadership</span>
+            <span className="text-primary text-xs font-semibold uppercase tracking-widest">Leadership Structure</span>
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold">
-              Message from Our <span className="text-gradient-gold">Founder &amp; CEO</span>
+              Organizational <span className="text-gradient-gold">Leadership Tree</span>
             </h2>
+            <p className="mt-4 text-muted text-sm max-w-2xl mx-auto leading-relaxed">
+              Our structured leadership framework ensures seamless operational oversight, strict safety compliance, and consistent service excellence across the UAE.
+            </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Founder Image */}
+          {/* Tree Structure Wrapper */}
+          <div className="relative max-w-5xl mx-auto">
+
+            {/* LEVEL 1: Founder & CEO / MD Card (TOP NODE) */}
             <motion.div
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="relative flex justify-center"
+              transition={{ duration: 0.6 }}
+              className="flex justify-center relative z-20"
             >
-              <div className="relative">
-                {/* Gold ring glow */}
-                <div className="absolute -inset-2 rounded-2xl bg-gradient-to-br from-primary/40 via-amber-400/20 to-transparent blur-md" />
-                <div className="relative w-full max-w-sm lg:max-w-md rounded-2xl overflow-hidden border border-primary/20 shadow-2xl">
-                  <Image
-                    src="/ceo2.jpeg"
-                    alt="Mahfuz Ullah - Founder & Managing Director, Al Areeq"
-                    width={500}
-                    height={650}
-                    className="object-cover w-full h-auto"
-                    priority
-                  />
-                  {/* Name overlay at bottom */}
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/95 via-background/60 to-transparent px-6 py-5">
-                    <p className="font-bold text-base text-foreground">Mahfuz Ullah</p>
-                    <p className="text-xs text-primary font-medium mt-0.5">Founder &amp; Managing Director</p>
+              <div className="relative group max-w-md w-full">
+                {/* Glowing Background Ring - Subtle Light Blue */}
+                <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-sky-400/30 via-cyan-400/20 to-blue-500/30 opacity-20 blur-sm group-hover:opacity-45 transition duration-500" />
+
+                <div className="relative glass rounded-2xl p-6 border border-sky-400/25 bg-surface/95 shadow-md group-hover:shadow-lg group-hover:border-sky-400/50 group-hover:bg-slate-900/95 transition-all duration-500 text-center">
+                  <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-sky-400/70 shadow-md mb-4">
+                    <Image
+                      src="/ceo2.jpeg"
+                      alt="Mahfuz Ullah - Founder & Managing Director"
+                      width={120}
+                      height={120}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  <span className="inline-block px-3 py-1 rounded-full text-[11px] font-semibold tracking-wider text-sky-300 bg-sky-500/10 border border-sky-400/30 uppercase mb-2">
+                    Executive Leadership
+                  </span>
+                  <h3 className="text-xl font-bold text-foreground group-hover:text-sky-300 transition-colors">Mahfuz Ullah</h3>
+                  <p className="text-xs text-sky-400 font-medium mt-0.5">Founder &amp; Managing Director</p>
+
+                  <p className="text-xs text-white/90 mt-3 leading-relaxed">
+                    Drives strategic direction, client partnerships, and business expansion across the UAE while maintaining uncompromising quality standards.
+                  </p>
+
+                  <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-center gap-2 text-[11px] text-white/80">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-sky-400" />
+                    <span>5+ Years Executive Direction</span>
                   </div>
                 </div>
               </div>
             </motion.div>
 
-            {/* Message */}
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-            >
-              <span className="text-primary text-xs font-semibold uppercase tracking-widest">Message from the MD</span>
-              <h3 className="mt-4 text-2xl sm:text-3xl font-bold">Managing Director&apos;s Message</h3>
+            {/* TREE CONNECTOR LINES: Top Node to Branch (Light Blue Gradient) */}
+            <div className="relative flex flex-col items-center my-2 pointer-events-none">
+              {/* Vertical stem from top card */}
+              <div className="w-0.5 h-10 bg-gradient-to-b from-sky-400 via-cyan-400 to-blue-500/40" />
 
-              {/* Quote icon */}
-              <div className="mt-6 relative">
-                <Quote className="absolute -top-2 -left-1 w-8 h-8 text-primary/20" />
-                <div className="pl-6 space-y-4 text-muted text-sm leading-relaxed">
-                  <p>Welcome to Al Areeq Technical Services.</p>
-                  <p>
-                    At Al Areeq, we are committed to delivering reliable, efficient, and high-quality
-                    technical services and manpower solutions across the UAE. Our goal is to support
-                    businesses with professional services that ensure operational excellence, safety,
-                    and customer satisfaction.
-                  </p>
-                  <p>
-                    With a dedicated team and a strong focus on professionalism, integrity, and
-                    innovation, we continuously strive to exceed client expectations in every project
-                    we undertake.
-                  </p>
-                  <p>
-                    We value the trust our clients place in us and believe that long-term relationships
-                    are built through quality service, transparency, and consistent performance.
-                  </p>
-                </div>
+              {/* Horizontal bar connecting the 3 sub-branches */}
+              <div className="hidden lg:block w-[70%] h-0.5 bg-gradient-to-r from-sky-500/20 via-sky-400 to-sky-500/20" />
+
+              {/* Vertical drop lines for left, center, right branches */}
+              <div className="hidden lg:grid grid-cols-3 w-[70%] h-8">
+                <div className="border-l-2 border-sky-400/60 h-full justify-self-start -ml-[1px]" />
+                <div className="border-l-2 border-sky-400/60 h-full justify-self-center -ml-[1px]" />
+                <div className="border-l-2 border-sky-400/60 h-full justify-self-end -mr-[1px]" />
               </div>
+            </div>
 
-              {/* Signature block */}
-              <div className="mt-8 flex items-center gap-4">
-                <div className="h-12 w-1 rounded-full bg-gradient-to-b from-primary to-amber-400" />
-                <div>
-                  <p className="font-bold text-foreground">Mahfuz Ullah</p>
-                  <p className="text-xs text-muted mt-0.5">Founder &amp; Managing Director, Al Areeq Technical Services</p>
-                </div>
-              </div>
-
-              {/* Credential badges */}
-              <div className="mt-8 flex flex-wrap gap-3">
-                {["UAE Licensed", "5+ Years Experience", "Industry Expert"].map((badge) => (
-                  <span
-                    key={badge}
-                    className="px-3 py-1.5 rounded-full text-xs font-medium border border-primary/30 text-primary bg-primary/5"
+            {/* LEVEL 2: Sub-Leadership Team Cards (3 NODES WITH LIGHT BLUE AESTHETIC) */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 relative z-20 mt-4 lg:mt-0">
+              {[
+                {
+                  name: "Tariq Ahmed",
+                  role: "Technical & Operations Director",
+                  badge: "Technical Operations",
+                  desc: "Oversees site technical operations, equipment maintenance, engineering execution, and safety compliance across all UAE project sites.",
+                  highlight: "Technical Operations & Safety",
+                  image: "/executive_technical.png",
+                },
+                {
+                  name: "Salman Al-Mansoor",
+                  role: "Head of Manpower Supply",
+                  badge: "Manpower Management",
+                  desc: "Directs rapid workforce deployment, visa processing, labor welfare, and skilled/unskilled worker management for client projects.",
+                  highlight: "Workforce & Rapid Deployment",
+                  image: "/executive_manpower.png",
+                },
+                {
+                  name: "Rashid Siddiqui",
+                  role: "Business Development Director",
+                  badge: "Business & Growth",
+                  desc: "Drives commercial partnerships, strategic client relationships, contract negotiations, and facility management growth initiatives.",
+                  highlight: "Key Accounts & Contracts",
+                  image: "/executive_business.png",
+                },
+              ].map((member, idx) => {
+                return (
+                  <motion.div
+                    key={member.name}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: idx * 0.15 }}
+                    className="flex justify-center h-full"
                   >
-                    {badge}
-                  </span>
-                ))}
+                    <div className="relative group w-full h-full flex flex-col">
+                      {/* Glowing Background Ring - Subtle Light Blue */}
+                      <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-sky-400/20 via-cyan-400/15 to-blue-500/20 opacity-15 blur-sm group-hover:opacity-40 transition duration-500" />
+
+                      <div className="relative glass rounded-2xl p-6 border border-sky-400/20 bg-surface/90 shadow-sm group-hover:shadow-md group-hover:border-sky-400/45 group-hover:bg-slate-900/90 text-center flex flex-col justify-between h-full transition-all duration-300">
+                        <div>
+                          {/* Circular Profile Avatar */}
+                          <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-sky-400/70 shadow-sm mb-4">
+                            <Image
+                              src={member.image}
+                              alt={member.name}
+                              width={120}
+                              height={120}
+                              className="object-cover w-full h-full"
+                            />
+                          </div>
+
+                          {/* Pill Badge */}
+                          <span className="inline-block px-3 py-1 rounded-full text-[11px] font-semibold tracking-wider text-sky-300 bg-sky-500/10 border border-sky-400/30 uppercase mb-2">
+                            {member.badge}
+                          </span>
+
+                          {/* Name & Title */}
+                          <h4 className="text-xl font-bold text-foreground group-hover:text-sky-300 transition-colors">
+                            {member.name}
+                          </h4>
+                          <p className="text-xs text-sky-400 font-medium mt-0.5">
+                            {member.role}
+                          </p>
+
+                          {/* Short Description */}
+                          <p className="text-xs text-white/90 mt-3 leading-relaxed">
+                            {member.desc}
+                          </p>
+                        </div>
+
+                        {/* Bottom Feature Divider & Icon */}
+                        <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-center gap-2 text-[11px] text-white/80">
+                          <CheckCircle2 className="w-3.5 h-3.5 text-sky-400" />
+                          <span>{member.highlight}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
+
+            {/* Managing Director Statement Card - Subtle Light Blue */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mt-14 glass rounded-2xl p-8 border border-sky-400/20 bg-surface/95 shadow-md relative overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-sky-500/10 rounded-bl-full pointer-events-none" />
+              <div className="flex flex-col md:flex-row items-start gap-6">
+                <div className="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-400/30 flex items-center justify-center shrink-0">
+                  <Quote className="w-6 h-6 text-sky-400" />
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-foreground mb-2">Message from the Managing Director</h4>
+                  <p className="text-xs sm:text-sm text-white/90 leading-relaxed italic">
+                    &ldquo;At Al Areeq Technical Services, we are committed to delivering reliable, efficient, and high-quality technical services and manpower solutions across the UAE. We value the trust our clients place in us and believe long-term relationships are built through quality service, transparency, and consistent performance.&rdquo;
+                  </p>
+                  <p className="text-xs font-semibold text-sky-400 mt-3">— Mahfuz Ullah, Founder &amp; Managing Director</p>
+                </div>
               </div>
             </motion.div>
+
           </div>
         </div>
       </section>
@@ -375,7 +461,7 @@ export default function AboutPage() {
       </section>
 
       {/* ─── Business Divisions / Portfolio ─── */}
-      <section className="relative py-24 bg-surface/50 overflow-hidden border-y border-white/5">
+      <section id="projects" className="relative py-24 bg-surface/50 overflow-hidden border-y border-white/5">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

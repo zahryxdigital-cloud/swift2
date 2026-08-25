@@ -6,7 +6,7 @@ const footerLinks = {
   quick: [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
-    { href: "/services", label: "Services" },
+    { href: "/services/technical-services", label: "Services" },
     { href: "/contact", label: "Contact Us" },
   ],
   services: [
@@ -99,7 +99,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-            <div className="flex gap-3 mt-6">
+            {/* <div className="flex gap-3 mt-6">
               {["facebook", "x", "linkedin", "instagram"].map((s) => (
                 <a
                   key={s}
@@ -109,7 +109,7 @@ export default function Footer() {
                   <span className="text-xs font-bold uppercase">{s[0]}</span>
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
 

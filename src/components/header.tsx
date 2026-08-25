@@ -10,14 +10,23 @@ import { usePathname } from "next/navigation";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About Us" },
   {
-    href: "/services",
+    href: "#",
+    label: "About Us",
+    dropdown: [
+      { href: "/about#story", label: "Our Story" },
+      { href: "/about#leadership", label: "Leadership" },
+      { href: "/about#projects", label: "Projects" },
+    ],
+  },
+  {
+    href: "#",
     label: "Services",
     dropdown: [
       // { href: "/services/document-clearing", label: "Document Clearing" },
       { href: "/services/technical-services", label: "Technical Services" },
       { href: "/services/building-cleaning", label: "Building Cleaning" },
+      { href: "/services/manpower-supply", label: "Manpower Supply" },
     ],
   },
   { href: "/contact", label: "Contact Us" },
@@ -26,7 +35,7 @@ const navLinks = [
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -67,12 +76,12 @@ export default function Header() {
                 <div
                   key={link.href}
                   className="relative group"
-                  onMouseEnter={() => setDropdownOpen(true)}
-                  onMouseLeave={() => setDropdownOpen(false)}
+                  onMouseEnter={() => setOpenDropdown(link.label)}
+                  onMouseLeave={() => setOpenDropdown(null)}
                 >
                   <Link
                     href={link.href}
-                    className={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${pathname.startsWith("/services")
+                    className={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-semibold transition-colors ${pathname.startsWith(link.href) && link.href !== "/"
                       ? "text-primary"
                       : "text-foreground/80 hover:text-primary"
                       }`}
@@ -81,18 +90,18 @@ export default function Header() {
                     <ChevronDown className="w-3.5 h-3.5 transition-transform group-hover:rotate-180" />
                   </Link>
                   <AnimatePresence>
-                    {dropdownOpen && (
+                    {openDropdown === link.label && (
                       <motion.div
                         initial={{ opacity: 0, y: 8 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 8 }}
-                        className="absolute top-full left-0 mt-1 w-72 glass rounded-xl p-2 shadow-2xl"
+                        className="absolute top-full left-0 mt-1 w-60 glass rounded-xl p-2 shadow-2xl"
                       >
                         {link.dropdown.map((dl) => (
                           <Link
                             key={dl.href}
                             href={dl.href}
-                            className="block px-4 py-3 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-white/5 transition-all"
+                            className="block px-4 py-3 rounded-lg text-sm font-semibold text-foreground/80 hover:text-primary hover:bg-white/5 transition-all"
                           >
                             {dl.label}
                           </Link>
@@ -105,7 +114,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${pathname === link.href
+                  className={`px-4 py-2 rounded-lg text-sm font-semibold transition-colors ${pathname === link.href
                     ? "text-primary"
                     : "text-foreground/80 hover:text-primary"
                     }`}
@@ -116,13 +125,20 @@ export default function Header() {
             )}
           </nav>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-2.5">
             <a
               href="tel:+971568126777"
-              className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary hover:bg-primary/20 transition-all text-sm font-medium"
+              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary hover:bg-primary/20 transition-all text-xs font-semibold"
             >
-              <Phone className="w-4 h-4" />
+              <Phone className="w-3.5 h-3.5" />
               +971 56 812 6777
+            </a>
+            <a
+              href="tel:+971505028211"
+              className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary hover:bg-primary/20 transition-all text-xs font-semibold"
+            >
+              <Phone className="w-3.5 h-3.5" />
+              +971 50 502 8211
             </a>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
@@ -148,7 +164,7 @@ export default function Header() {
                   <div key={link.href}>
                     <Link
                       href={link.href}
-                      className="block px-4 py-3 rounded-lg text-foreground/80 hover:text-primary hover:bg-white/5 font-medium"
+                      className="block px-4 py-3 rounded-lg text-foreground/80 hover:text-primary hover:bg-white/5 font-semibold"
                       onClick={() => setMobileOpen(false)}
                     >
                       {link.label}
@@ -158,7 +174,7 @@ export default function Header() {
                         <Link
                           key={dl.href}
                           href={dl.href}
-                          className="block px-4 py-2 rounded-lg text-sm text-muted hover:text-primary hover:bg-white/5"
+                          className="block px-4 py-2 rounded-lg text-sm font-medium text-muted hover:text-primary hover:bg-white/5"
                           onClick={() => setMobileOpen(false)}
                         >
                           {dl.label}
@@ -170,7 +186,7 @@ export default function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`block px-4 py-3 rounded-lg font-medium ${pathname === link.href
+                    className={`block px-4 py-3 rounded-lg font-semibold ${pathname === link.href
                       ? "text-primary bg-primary/5"
                       : "text-foreground/80 hover:text-primary hover:bg-white/5"
                       }`}
@@ -182,10 +198,18 @@ export default function Header() {
               )}
               <a
                 href="tel:+971568126777"
-                className="flex items-center gap-2 px-4 py-3 mt-4 rounded-lg bg-primary/10 border border-primary/20 text-primary font-medium"
+                className="flex items-center gap-2 px-4 py-3 mt-4 rounded-lg bg-primary/10 border border-primary/20 text-primary font-semibold"
               >
                 <Phone className="w-4 h-4" />
                 +971 56 812 6777
+              </a>
+              <a
+                href="tel:+971505028211"
+                className="flex items-center gap-2 px-4 py-3 mt-4 rounded-lg bg-primary/10 border border-primary/20 text-primary font-semibold"
+              >
+                <Phone className="w-4 h-4" />
+
+                +971 50 502 8211
               </a>
             </div>
           </motion.div>
