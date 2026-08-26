@@ -497,7 +497,7 @@ export default function AboutPage() {
                 desc: "Expert technical solutions",
                 details: "Comprehensive technical support, engineering, maintenance, and expert technical manpower supply.",
                 icon: ShieldCheck,
-                href: "/services/technical-services",
+                href: "/services#technical-services",
               },
               {
                 num: "02",
@@ -505,7 +505,7 @@ export default function AboutPage() {
                 desc: "Professional facility management",
                 details: "Top-tier building cleaning, janitorial maintenance, and thorough facility hygiene solutions tailored for commercial sectors.",
                 icon: Building2,
-                href: "/services/building-cleaning",
+                href: "/services#building-cleaning",
               },
             ].map((item, i) => {
               const Icon = item.icon;

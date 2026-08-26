@@ -6,13 +6,13 @@ const footerLinks = {
   quick: [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
-    { href: "/services/technical-services", label: "Services" },
+    { href: "/services", label: "Services" },
     { href: "/contact", label: "Contact Us" },
   ],
   services: [
-    { href: "/services/construction-manpower-supply", label: "Construction Manpower Supply" },
-    { href: "/services/marine-repair-and-workshop-manpower-supply", label: "Marine Repair & Workshop Manpower Supply" },
-    { href: "/services/maintenance-company-staffing-solutions", label: "Maintenance Staffing Solutions" },
+    { href: "/services#manpower-supply", label: "Manpower Supply Solutions" },
+    { href: "/services#technical-services", label: "Technical & MEP Services" },
+    { href: "/services#building-cleaning", label: "Building Cleaning & Sanitation" },
   ],
 };
 

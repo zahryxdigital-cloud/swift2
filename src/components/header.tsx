@@ -19,16 +19,7 @@ const navLinks = [
       { href: "/about#projects", label: "Projects" },
     ],
   },
-  {
-    href: "#",
-    label: "Services",
-    dropdown: [
-      // { href: "/services/document-clearing", label: "Document Clearing" },
-      { href: "/services/technical-services", label: "Technical Services" },
-      { href: "/services/building-cleaning", label: "Building Cleaning" },
-      { href: "/services", label: "Manpower Supply" },
-    ],
-  },
+  { href: "/services", label: "Services" },
   { href: "/contact", label: "Contact Us" },
 ];
 

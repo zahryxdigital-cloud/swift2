@@ -1,7 +1,5 @@
-"use client";
-
-import { notFound } from "next/navigation";
+import { redirect } from "next/navigation";
 
 export default function DocumentClearingPage() {
-  notFound();
+  redirect("/services");
 }
