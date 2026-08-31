@@ -28,7 +28,7 @@ export async function POST(req: NextRequest) {
 
     const { data, error } = await resend.emails.send({
       from: process.env.CONTACT_FROM_EMAIL || "onboarding@resend.dev",
-      to: [process.env.CONTACT_RECEIVER_EMAIL || "Infoalareeqtech@gmail.com"],
+      to: [process.env.CONTACT_RECEIVER_EMAIL || "Infoalareeqtech@mahfuz@alareeqhrm.com"],
       replyTo: email,
       subject: `[Al Areeq Contact] ${subject || "New Inquiry"} — from ${name}`,
       html: `
@@ -47,22 +47,20 @@ export async function POST(req: NextRequest) {
                 <td style="padding: 10px 0; color: #a0a0a0; font-size: 13px; vertical-align: top;">Email</td>
                 <td style="padding: 10px 0;"><a href="mailto:${email}" style="color: #c9a227; font-size: 14px;">${email}</a></td>
               </tr>
-              ${
-                phone
-                  ? `<tr>
+              ${phone
+          ? `<tr>
                 <td style="padding: 10px 0; color: #a0a0a0; font-size: 13px; vertical-align: top;">Phone</td>
                 <td style="padding: 10px 0; color: #e5e5e5; font-size: 14px;"><a href="tel:${phone}" style="color: #c9a227;">${phone}</a></td>
               </tr>`
-                  : ""
-              }
-              ${
-                subject
-                  ? `<tr>
+          : ""
+        }
+              ${subject
+          ? `<tr>
                 <td style="padding: 10px 0; color: #a0a0a0; font-size: 13px; vertical-align: top;">Subject</td>
                 <td style="padding: 10px 0; color: #e5e5e5; font-size: 14px;">${subject}</td>
               </tr>`
-                  : ""
-              }
+          : ""
+        }
             </table>
             <div style="margin-top: 20px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 3px solid #c9a227;">
               <p style="margin: 0 0 8px; color: #a0a0a0; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Message</p>

@@ -105,10 +105,10 @@ export default function ContactPage() {
                 <Mail className="w-6 h-6 text-primary mb-3" />
                 <h3 className="font-semibold mb-1">Email Us</h3>
                 <a
-                  href="mailto:Infoalareeqtech@gmail.com"
+                  href="mailto:Infoalareeqtech@mahfuz@alareeqhrm.com"
                   className="text-sm text-muted hover:text-primary transition-colors"
                 >
-                  Infoalareeqtech@gmail.com
+                  Infoalareeqtech@mahfuz@alareeqhrm.com
                 </a>
               </div>
               <div className="glass rounded-2xl p-6 border border-white/5 hover:border-primary/20 transition-all">

@@ -93,9 +93,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:Infoalareeqtech@gmail.com" className="flex gap-3 text-sm text-muted hover:text-primary transition-colors">
+                <a href="mailto:Infoalareeqtech@mahfuz@alareeqhrm.com" className="flex gap-3 text-sm text-muted hover:text-primary transition-colors">
                   <Mail className="w-5 h-5 text-primary shrink-0" />
-                  Infoalareeqtech@gmail.com
+                  Infoalareeqtech@mahfuz@alareeqhrm.com
                 </a>
               </li>
             </ul>
